@@ -1,6 +1,6 @@
 module.exports = function( eleventyConfig ) {
 	eleventyConfig.setQuietMode( true );
-	eleventyConfig.setTemplateFormats( 'html,md' );
+	eleventyConfig.setTemplateFormats( 'html,md,liquid' );
 
 	eleventyConfig.addPassthroughCopy( './assets/' );
 	eleventyConfig.addPassthroughCopy( './robots.txt' );
