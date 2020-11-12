@@ -3,6 +3,7 @@ module.exports = function( eleventyConfig ) {
 	eleventyConfig.setTemplateFormats( 'html,md' );
 
 	eleventyConfig.addPassthroughCopy( './assets/' );
+	eleventyConfig.addPassthroughCopy( './robots.txt' );
 
 	eleventyConfig.addFilter( 'dump', function( anything ) {
 		console.log( 'dump:', anything );
